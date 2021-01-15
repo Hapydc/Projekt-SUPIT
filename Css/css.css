@@ -1,0 +1,171 @@
+#start_page a:hover{
+    background-color: chocolate;
+}
+#navigation-container{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    background-color: black;
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 100%;
+    
+}
+#content-container{
+    background-color: white;
+}
+#logo{
+height: 60px;
+
+padding-left: 5rem;
+padding-right: 5rem;    
+
+}
+#start_page{
+    height: 30;
+}
+#news_container{
+    text-align: center;
+    height: 1000px;
+    padding-top: 350px;
+}   
+#myVideo{
+position: absolute;
+  object-fit: cover;
+  width: 99%;
+  height: 100%;
+  position: fixed;
+}
+#about_us_div{
+    text-align: right;
+    margin-bottom: 10px;
+}
+#our_values {
+    font-size: 15px;
+    color: yellow  ;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    text-align: right;
+    padding-left: 500px;
+    
+}
+#history{
+    font-size: 15px;
+    color:yellow;
+    background:none;
+    border:none;
+    margin:0;
+    cursor: pointer;
+    text-align: right;
+    padding-left: 5px;
+}
+#algebra_group{
+    font-size: 15px;
+    color:yellow;
+    background:none;
+    border:none;
+    margin:0;
+    cursor: pointer;
+    text-align: right;
+    padding-left: 5px;
+   
+}
+#how_to_find_us{
+    font-size: 15px;
+    color: yellow;
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    padding-left: 5px;
+    
+}
+#table{
+    text-align: center;
+    padding-left: 170px;
+    padding-right: 100px;
+}
+#table_data{
+    width: 400px;
+    height: 300px;
+    border: 1px solid black ;
+    text-align:center;
+    
+   
+}
+#campus_jpg{
+    width:100%;
+   height:300px;
+   object-fit:cover;
+   object-position:50% 50%;
+}
+.about_us_header{
+    text-align: center;
+    text-decoration: underline solid  yellow;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: purple;
+}
+
+
+.promise{
+    font-size: 1.2em;
+    font-family: Garamond ;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 167px;
+    padding-right: 167px;
+}
+.history{
+    font-size: 1.2em;
+    padding-top: 50px;
+    font-family: Garamond ;
+    text-align: center;
+    padding-left: 167px;
+    padding-right: 167px;
+}
+    
+
+#news1_jpg{
+    width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position:relative;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}
+#news2_jpg{
+    width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position:relative;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}#news3_jpg{
+    width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position:relative;
+  overflow: hidden;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}
+
+
+
+
+
