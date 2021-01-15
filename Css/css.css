@@ -130,6 +130,22 @@ h2{
     padding-left: 167px;
     padding-right: 167px;
 }
+.certificates{
+    font-size: 1.2em;
+    padding-top: 50px;
+    font-family: Garamond ;
+    text-align: center;
+    padding-left: 167px;
+    padding-right: 167px;
+}
+
+.certicifate_img{
+    height: 130px;
+    width: 130px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
     
 
 #news1_jpg{
