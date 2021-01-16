@@ -5,14 +5,20 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     background-color: black;
-    height: 60px;
+    height: 80px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    
     font-size: 100%;
+    color: blue;
+    float: left;
+    width: 100%;
     
 }
 #content-container{
-    background-color: white;
+    background-color: silver;
+}
+.body{
+    background-color: silver;
 }
 #logo{
 height: 60px;
@@ -40,7 +46,7 @@ position: absolute;
     text-align: right;
     margin-bottom: 10px;
 }
-#our_values {
+.Our_values {
     font-size: 15px;
     color: yellow  ;
     background:none;
@@ -49,10 +55,10 @@ position: absolute;
     padding:0;
     cursor: pointer;
     text-align: right;
-    padding-left: 500px;
-    
+    float: right;
+    margin-top: 30px;
 }
-#history{
+.History{
     font-size: 15px;
     color:yellow;
     background:none;
@@ -60,9 +66,10 @@ position: absolute;
     margin:0;
     cursor: pointer;
     text-align: right;
-    padding-left: 5px;
+    margin-top: 30px;
+    float: right;
 }
-#algebra_group{
+.Algebra_group{
     font-size: 15px;
     color:yellow;
     background:none;
@@ -70,10 +77,11 @@ position: absolute;
     margin:0;
     cursor: pointer;
     text-align: right;
-    padding-left: 5px;
+    margin-top: 30px;
+    float: right;
    
 }
-#how_to_find_us{
+.How_to_find_us{
     font-size: 15px;
     color: yellow;
     background:none;
@@ -81,22 +89,12 @@ position: absolute;
     margin:0;
     padding:0;
     cursor: pointer;
-    padding-left: 5px;
+    float: right;
+    margin-top: 31px;
+    margin-right: 5px;
     
 }
-#table{
-    text-align: center;
-    padding-left: 170px;
-    padding-right: 100px;
-}
-#table_data{
-    width: 400px;
-    height: 300px;
-    border: 1px solid black ;
-    text-align:center;
-    
-   
-}
+
 #campus_jpg{
     width:100%;
    height:300px;
@@ -118,10 +116,28 @@ h3{
     text-decoration: underline 1px black ;
     font-variant-caps: all-petite-caps;
     font-size: 1.3em;
+    margin-left: 3%;
+    color: deepskyblue;
     
 }
-
-
+p{
+    margin-left: 3%;
+    text-align: justify;
+    margin-right: 3%;
+}
+a {
+    color: inherit;
+}
+.footer{
+    height: 250px;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+  color:black;
+background-image:url('../img/zaiskri-bg.jpg');   
+background-repeat: no-repeat;
+background-size: 100% ;
+}
 .promise{
     font-size: 1.2em;
     font-family: Garamond ;
@@ -149,29 +165,42 @@ h3{
     text-align: center;
     width: 30%;
     margin-left: 1%;
+    background-color: white;
     
     
 }
+.history_div{
+    margin-left: 6%;
+    
+    height: 300px;
+}
 .history_data{
-    text-align: justify;
-    height: 230px;
-    border:  black;
+    text-justify: auto;
+    text-align:justify;
+    height: 270px;
+    border: 1px  black;
     border-style: solid;
     border-width: thin;
-    margin-left: 0.01%;
     padding-top: 10px;
     float: left;
     text-align: center;
-    width: 33%;
-    background-color:#F8F8F8;
+    width: 30%;
+    margin-left: 1%;
 }
 .history{
     font-size: 1.2em;
-    padding-top: 50px;
     font-family: Garamond ;
-    text-align: center;
+    text-align: justify;
+    padding-top: 50px;
     padding-left: 167px;
     padding-right: 167px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.certificates_div{
+    margin-left: 6%;
+    margin-right: 4%;
+    height: 300px;
 }
 .certificates_logo{
     float: left;
@@ -181,22 +210,25 @@ h3{
 }
 .certificates{
     font-size: 1.2em;
-    padding-top: 50px;
     font-family: Garamond ;
-    text-align: center;
+    text-align: justify;
+    padding-top: 50px;
     padding-left: 167px;
     padding-right: 167px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .certicifate_images{
-    
+    padding-top: 10px;
     float: left;
     width: 23%;
     text-align: center;
 }
 .certicifate_img{
-    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 3%;
     height: 150px;
-    width: 50%;
+    width: 60%;
   
 }
 .location1{
@@ -204,24 +236,39 @@ h3{
     width: 35%;
     float:left;
     margin-left: 15%;
-    
-    
+    background-color: white;
     border: solid 1px   black;
-    height: 350px;
-    
-    
+    height: 400px; 
 }
 .location2{
     width: 35%;
     float:left;
     padding-left: 1%;
-    height: 350px;
+    height: 400px;
     border: solid 1px   black;
     margin-left: 2%;
+    background-color: white;
     
     
     
 }
+.map_img{
+    height: 1000px;
+    background-image:url('../img/Izrezak karte.png') ;
+    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:100% 1000px ;
+    
+}
+
+.mapouter{
+    
+    margin-left: 24%;
+    width: 50%;
+    padding-top:  10px; ;
+}
+
     
 
 #news1_jpg{
