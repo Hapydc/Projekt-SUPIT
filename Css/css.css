@@ -112,15 +112,58 @@ h2{
     text-align: center;
     color: purple;
 }
+h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    text-decoration: underline 1px black ;
+    font-variant-caps: all-petite-caps;
+    font-size: 1.3em;
+    
+}
 
 
 .promise{
     font-size: 1.2em;
     font-family: Garamond ;
-    text-align: center;
+    text-align: justify;
     padding-top: 50px;
     padding-left: 167px;
     padding-right: 167px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.our_values_div{
+    margin-left: 6%;
+    
+    height: 300px;
+}
+.our_values_data{
+    
+    text-align:center;
+    height: 270px;
+    border: 1px  black;
+    border-style: solid;
+    border-width: thin;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    width: 30%;
+    margin-left: 1%;
+    
+    
+}
+.history_data{
+    text-align: justify;
+    height: 230px;
+    border:  black;
+    border-style: solid;
+    border-width: thin;
+    margin-left: 0.01%;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    width: 33%;
+    background-color:#F8F8F8;
 }
 .history{
     font-size: 1.2em;
@@ -129,6 +172,55 @@ h2{
     text-align: center;
     padding-left: 167px;
     padding-right: 167px;
+}
+.certificates_logo{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+.certificates{
+    font-size: 1.2em;
+    padding-top: 50px;
+    font-family: Garamond ;
+    text-align: center;
+    padding-left: 167px;
+    padding-right: 167px;
+}
+.certicifate_images{
+    
+    float: left;
+    width: 23%;
+    text-align: center;
+}
+.certicifate_img{
+    margin: auto;
+    height: 150px;
+    width: 50%;
+  
+}
+.location1{
+    
+    width: 35%;
+    float:left;
+    margin-left: 15%;
+    
+    
+    border: solid 1px   black;
+    height: 350px;
+    
+    
+}
+.location2{
+    width: 35%;
+    float:left;
+    padding-left: 1%;
+    height: 350px;
+    border: solid 1px   black;
+    margin-left: 2%;
+    
+    
+    
 }
     
 
