@@ -144,7 +144,7 @@ a {
     top: 50%;
     width: 100%;
   color:black;
-background-image:url('../img/zaiskri-bg.jpg');   
+background-image:url('../resources/images/zaiskri-bg.jpg');   
 background-repeat: no-repeat;
 background-size: 100% ;
 }
@@ -264,7 +264,7 @@ background-size: 100% ;
 }
 .map_img{
     height: 1000px;
-    background-image:url('../img/Izrezak karte.png') ;
+    background-image:url('../resources/images/Izrezak karte.png') ;
     
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -346,4 +346,8 @@ background-size: 100% ;
   cursor: pointer;
 }
 
-
+.news_container{
+justify-content: center;
+text-align: justify;
+font-size: medium;
+}
