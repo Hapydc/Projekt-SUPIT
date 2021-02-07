@@ -4,7 +4,7 @@
 #navigation-container{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
-    background-color: black;
+    
     height: 80px;
     padding-top: 20px;
     
@@ -135,9 +135,7 @@ p{
     text-align: justify;
     margin-right: 3%;
 }
-a {
-    color: inherit;
-}
+
 .footer{
     height: 250px;
     left: 50%;
@@ -351,3 +349,17 @@ justify-content: center;
 text-align: justify;
 font-size: medium;
 }
+
+
+.navbar-brand img {
+    max-height: 60px;
+    width: auto;
+  }
+  
+  .bg-my-black {
+    background-color: black;
+    float:left;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke= 'rgba(255,255,255,0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
