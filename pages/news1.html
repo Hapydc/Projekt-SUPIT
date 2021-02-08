@@ -1,58 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document
+    </title>
     <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="style/font-awesome.min.css">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="../Projekt-SUPIT/style/style.css">
-    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <title>SUPIT - Početna</title>
+    <link rel="shortcut icon" href="https://www.algebra.hr/wp-content/themes/algebra/favicon.ico">
 </head>
-<body>
-    <div class="row"> 
-        <nav class="navbar navbar-expand-md navbar-my-black bg-my-black col">
-            <a class="navbar-brand"><img src="../Projekt-SUPIT/resources/images/Algebra-logo.png" alt=""></a>
-            <div id="my-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav ">
-					<li class="nav-item active">
-						<a class="nav-link" href="../Projekt-SUPIT/index.html">Početna stranica <span class="sr-only">(trenutna stranica)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../Projekt-SUPIT/pages/about_us.html">O nama</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../Projekt-SUPIT/pages/news.html">Novosti</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../Projekt-SUPIT/pages/curiculum.html">Nastavni plan</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Kontakt</a>
-					</li>
 
-				</ul>
-			</div>
-     <div class="news_container">
-        Nakon godinu dana priprema za natjecanje WorldSkills
-        Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
-        cijelog svijeta, trud se itekako isplatio. Josip,
-        student 3. godine preddiplomskog studija sistemskog
-        inženjerstva osvojio je 12. mjesto u vještini IT
-        Networks and System Administration te osvojio medalju
-        izvrsnosti! Čestitke Josipu ali i njegovim/našim
-        mentorima koji su ga pripremali za ovo natjecanje –
-        voditelju studija sistemskog inženjerstva Silviju
-        Papiću, voditelju katedre za operacijske sustave –
-        Vedranu Dakiću i asistentu na studiju sistemskog
-        inženjerstva – Jasminu Redžepagiću. Čestitke i našem
-        studentu 3.godine preddiplomskog studija programskog
-        inženjerstva Josipu Horvatu i mentoru voditelju katedre
-        za programsko inženjerstvo - Goranu Đambiću na osvojenom
-        16.mjestu u vještini IT Software Solutions for Business.
-    </div>    
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-md navbar-my-black bg-my-black col">
+                <a class="navbar-brand"><img src="../resources/images/Algebra-logo.png" alt=""></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html" onclick="typeWriter()">Početna stranica <span
+                                    class="sr-only">(trenutna
+                                    stranica)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about_us.html">O nama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./news.html">Novosti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./curiculum.html">Nastavni plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal"
+                                data-target="#contact-container">Kontakt</a>
+                        </li>
+                    </ul>
+
+                    <div>test</div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <img src="../resources/images/novost1.jpg" class="heading-images">
+        </div>
+        <div class="container">
+            <div class="heading">WorldSkills natjecanje - Kazan 2019.</div>
+
+            <div class="news_data">
+                Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje –
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave –
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="../resources/images/galerija1.jpg" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="../resources/images/galerija2.jpg" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+            </div>
+            <div class="row">
+                
+                <video width="320" height="240" controls>
+                    <source src="../resources/videos/worldskills.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="../resources/images/galerija1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="../resources/images/galerija2.jpg" style="width:100%">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+        <script src="../scripts/jquery-3.3.1.slim.min.js"></script>
+        <script src="../scripts/bootstrap.bundle.min.js"></script>
+        <script src="../scripts/script.js"></script>
 </body>
+
 </html>
