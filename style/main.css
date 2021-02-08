@@ -1,57 +1,12 @@
-#start_page a:hover{
-    background-color: chocolate;
-}
-#navigation-container{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    cursor: pointer;
-    
-    height: 80px;
-    padding-top: 20px;
-    
-    font-size: 100%;
-    color: blue;
-    float: left;
-    width: 100%;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 10;
-   
-    
-}
-
 .body{
     background-color: silver;
-}
-#logo{
-height: 60px;
-
-padding-left: 5rem;
-padding-right: 5rem;    
-
-}
-#start_page{
-    height: 30;
-}
-#news_container{
-    text-align: center;
-    height: 1000px;
-    padding-top: 350px;
-}   
+} 
 #myVideo{
-    position: fixed;
-    top: 0;
+    position: fixed;  
     right: 0;
-    bottom: 0;
-    left: 0;
+    bottom: 0; 
     overflow: hidden;
     z-index: -100;
-}
-
-#about_us_div{
-    text-align: right;
-    margin-bottom: 10px;
 }
 .Our_values {
     font-size: 15px;
@@ -111,16 +66,17 @@ padding-right: 5rem;
     top: 0;
     z-index: 10;
 }
-.about_us_header{
+.heading{
+    font-size: 40px;
     text-align: center;
     text-decoration: underline solid  yellow;
 }
-.h2_class{
+.subheading{
     font-size: 2em;
     text-align: center;
     color: purple;
 }
-.h3_class{
+.table-heading{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
     text-decoration: underline 1px black ;
@@ -128,7 +84,6 @@ padding-right: 5rem;
     font-size: 1.3em;
     margin-left: 3%;
     color: deepskyblue;
-    
 }
 p{
     margin-left: 3%;
@@ -146,23 +101,10 @@ background-image:url('../resources/images/zaiskri-bg.jpg');
 background-repeat: no-repeat;
 background-size: 100% ;
 }
-.promise{
-    font-size: 1.2em;
-    font-family: Garamond ;
-    text-align: justify;
-    padding-top: 50px;
-    padding-left: 167px;
-    padding-right: 167px;
-    margin-left: 10%;
-    margin-right: 10%;
+.about-us-text{
+    text-align: center;
 }
-.our_values_div{
-    margin-left: 6%;
-    
-    height: 300px;
-}
-.our_values_data{
-    
+.our_values_data{    
     text-align:center;
     height: 270px;
     border: 1px  black;
@@ -171,12 +113,28 @@ background-size: 100% ;
     padding-top: 10px;
     float: left;
     text-align: center;
-    width: 30%;
     margin-left: 1%;
-    background-color: white;
-    
-    
+    background-color: white;       
 }
+
+@media (min-width: 1200px) {
+    .our_values_data{    
+        width: 30%;    
+    }
+}
+
+@media (max-width: 800px) {
+    .our_values_data{    
+        width: 45%;    
+    }
+}
+
+@media (max-width: 640px) {
+    .our_values_data{    
+        width: 100%;    
+    }
+}
+
 .history_div{
     margin-left: 6%;
     
@@ -195,16 +153,6 @@ background-size: 100% ;
     width: 30%;
     margin-left: 1%;
 }
-.history{
-    font-size: 1.2em;
-    font-family: Garamond ;
-    text-align: justify;
-    padding-top: 50px;
-    padding-left: 167px;
-    padding-right: 167px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 .certificates_div{
     margin-left: 6%;
     margin-right: 4%;
@@ -216,28 +164,11 @@ background-size: 100% ;
     text-align: center;
     
 }
-.certificates{
-    font-size: 1.2em;
-    font-family: Garamond ;
-    text-align: justify;
-    padding-top: 50px;
-    padding-left: 167px;
-    padding-right: 167px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.certicifate_images{
-    padding-top: 10px;
-    float: left;
-    width: 23%;
-    text-align: center;
-}
 .certicifate_img{
     margin-top: 6%;
     margin-bottom: 3%;
     height: 150px;
     width: 60%;
-  
 }
 .location1{
     
@@ -262,56 +193,72 @@ background-size: 100% ;
 }
 .map_img{
     height: 1000px;
-    background-image:url('../resources/images/Izrezak karte.png') ;
-    
+    background-image:url('../resources/images/Izrezak karte.png') ;   
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size:100% 1000px ;
-    
+    background-size:100% 1000px ; 
 }
 
 .mapouter{
-    
+    border-radius: 50%;
     margin-left: 24%;
     width: 50%;
     padding-top:  10px; ;
 }
 
-    
-
-#news1_jpg{
+.cropped-1{
+    position: absolute;
+    top:50%;
+    left: 10%;
+    border-radius: 50%;
+    background-position: center;
+    overflow: hidden;
+    background-image: url(../resources/images/novost1.jpg);
     width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position:relative;
-  overflow: hidden;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-
+    height: 300px;
+    background-size: cover;
+}  
+.cropped-2{
+    position: absolute;
+    top:50%;
+    left: 40%;
+    border-radius: 50%;
+    background-position: center;
+    overflow: hidden;
+    background-image: url(../resources/images/novost2.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}.cropped-3{
+    top: 50%;
+    position: absolute;
+    left: 70%;
+    border-radius: 50%;
+    background-position: center;
+    overflow: hidden;
+    background-image: url(../resources/images/novost3.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
 }
-#news2_jpg{
-    width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position:relative;
-  overflow: hidden;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-
-}#news3_jpg{
-    width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  position:relative;
-  overflow: hidden;
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-
+@media (max-width: 800px) {
+    .cropped-1{    
+        width: 150px;
+    height: 150px;   
+    }
 }
-
+@media (max-width: 800px) {
+    .cropped-2{    
+        width: 150px;
+    height: 150px;   
+    }
+}
+@media (max-width: 800px) {
+    .cropped-3{    
+        width: 150px;
+    height: 150px;   
+    }
+}
 
   .close {
     color: #aaa;
@@ -325,18 +272,123 @@ background-size: 100% ;
   text-decoration: none;
   cursor: pointer;
 }
-
-.news_container{
-justify-content: center;
+.news_data{
 text-align: justify;
 font-size: medium;
 }
 
 
+* {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 .navbar-brand img {
     max-height: 60px;
     width: auto;
   }
+
+  
   
   .bg-my-black {
     background-color: black;
