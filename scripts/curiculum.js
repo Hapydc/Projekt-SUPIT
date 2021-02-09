@@ -14,8 +14,7 @@ function initAutocomplete (data){
         select: function( event, ui ) { 
             event.preventDefault();
             $('#tags').val(ui.item.label);
-            GetCuriculum(ui.item.value)
-            
+            GetCuriculum(ui.item.value)    
         }   
       });
 }
@@ -25,9 +24,7 @@ function GetCuriculum(value){
             cur.onreadystatechange = function () {
     if (cur.readyState == 4 ) {
          var kolegij=JSON.parse(this.responseText)
-         AddKolegij(kolegij);
-         
-         
+         AddKolegij(kolegij);       
       }  
   }
 cur.send();
@@ -44,25 +41,22 @@ function Sum(array){
    for (i = 0; i < array.length; i++) {
      ects+=array[i].ects;
      hours+=array[i].sati;
-
    }
   $('.footerRow').remove();
   $('#myTable').append('<tr class="footerRow"><td>Ukupno</td><td>'+ects+'</td><td>'+hours+'</td></tr>');
   ects=0;
   hours=0;
 }
-
-
 var kolegijArray =[
-  
 ];
-
 function DeleteRow(i,array){
-  document.getElementById('myTable').deleteRow(i)
   DeleteFromArray(i);
+  document.getElementById('myTable').deleteRow(i)
 }
-function DeleteFromArray(id){
-  array.splice();
+function DeleteFromArray(index){
+  console.log(index);
+  kolegijArray.splice([i-1],1);
+  Sum(kolegijArray);
 }
 
 
