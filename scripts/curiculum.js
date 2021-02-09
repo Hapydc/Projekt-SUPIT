@@ -25,36 +25,44 @@ function GetCuriculum(value){
             cur.onreadystatechange = function () {
     if (cur.readyState == 4 ) {
          var kolegij=JSON.parse(this.responseText)
-         AddTableItem(kolegij);
-         AddToArray(kolegijArray,kolegij.id,kolegij.ects,kolegij.hours);
-         Sum(kolegij.ects,kolegij.sati);
+         AddKolegij(kolegij);
+         
+         
       }  
   }
 cur.send();
 }
-function AddTableItem(value){
+function AddKolegij(value){
   console.log(value);
-  
-  $('#myTable').append('<tr><td>'+value.kolegij+'</td><td>'+value.ects+'</td><td>'+value.sati+'</td><td>'+value.predavanja+'</td><td>'+value.vjezbe+' </td><td>'+value.tip+'</td><td><button onclick=DeleteRow(this.parentNode.parentNode.rowIndex) class="btn">Obriši</button></td></tr>');
+  $('#myTable').append('<tr><td>'+value.kolegij+'</td><td>'+value.ects+'</td><td>'+value.sati+'</td><td>'+value.predavanja+'</td><td>'+value.vjezbe+' </td><td>'+value.tip+'</td><td><button onclick=DeleteRow(this.parentNode.parentNode.rowIndex,kolegijArray) class="btn">Obriši</button></td></tr>');
+  kolegijArray.push(value);
+  Sum(kolegijArray)
 } 
 var ects=0;
 var hours=0;
-function Sum(a,b){
-  ects =ects+ a;
-  hours =hours+b;
-  console.log(ects, hours);
+function Sum(array){
+   for (i = 0; i < array.length; i++) {
+     ects+=array[i].ects;
+     hours+=array[i].sati;
+
+   }
   $('.footerRow').remove();
   $('#myTable').append('<tr class="footerRow"><td>Ukupno</td><td>'+ects+'</td><td>'+hours+'</td></tr>');
+  ects=0;
+  hours=0;
 }
-function AddToArray(array,id,ects,hours){
-array.push(id,ects,hours);
-console.log(array);
-}
+
+
 var kolegijArray =[
+  
 ];
 
-function DeleteRow(i){
+function DeleteRow(i,array){
   document.getElementById('myTable').deleteRow(i)
+  DeleteFromArray(i);
+}
+function DeleteFromArray(id){
+  array.splice();
 }
 
 
