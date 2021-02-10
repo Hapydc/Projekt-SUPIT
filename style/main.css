@@ -111,13 +111,11 @@ background-size: 100% ;
 }
 .our_values_data{    
     text-align:center;
-    height: 270px;
+    height: 150%;
     border: 1px  black;
     border-style: solid;
     border-width: thin;
-    padding-top: 10px;
     float: left;
-    text-align: center;
     margin-left: 1%;
     background-color: white;       
 }
@@ -145,19 +143,6 @@ background-size: 100% ;
     
     height: 300px;
 }
-.history_data{
-    text-justify: auto;
-    text-align:justify;
-    height: 270px;
-    border: 1px  black;
-    border-style: solid;
-    border-width: thin;
-    padding-top: 10px;
-    float: left;
-    text-align: center;
-    width: 30%;
-    margin-left: 1%;
-}
 .certificates_div{
     margin-left: 6%;
     margin-right: 4%;
@@ -175,42 +160,57 @@ background-size: 100% ;
     height: 150px;
     width: 60%;
 }
+@media (max-width: 640px) {
+  .location1{    
+      width: 100%;    
+  }
+}
+@media (min-width: 1200px) {
+  .location1{    
+      width: 45%;    
+  }
+}
+@media (max-width: 640px) {
+  .location2{    
+      width: 100%;    
+  }
+}
+@media (min-width: 1200px) {
+  .location2{    
+      width: 45%;    
+  }
+}
+
+@media (min-width: 1200px) {
+  .certificates_logo{    
+      width: 25%;    
+  }
+}
+@media (max-width: 640px) {
+  .certificates_logo{    
+      width: 50%;    
+  }
+}
+
 .location1{
-    
-    width: 35%;
+    margin-left: 10%;
     float:left;
-    margin-left: 15%;
     background-color: white;
     border: solid 1px   black;
-    height: 400px; 
+    margin-left: 1%;
 }
 .location2{
-    width: 35%;
+
     float:left;
     padding-left: 1%;
-    height: 400px;
     border: solid 1px   black;
-    margin-left: 2%;
-    background-color: white;
-    
-    
-    
+    margin-left: 1%;
+    background-color: white;   
 }
-.map_img{
-    height: 1000px;
-    background-image:url('../resources/images/Izrezak karte.png') ;   
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size:100% 1000px ; 
+.zaiskri-img{
+  width: 100%;
+  height: 300px;
 }
-
-.mapouter{
-    border-radius: 50%;
-    margin-left: 24%;
-    width: 50%;
-    padding-top:  10px; ;
-}
-
 .cropped-1{
     position: absolute;
     top:50%;

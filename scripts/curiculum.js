@@ -30,8 +30,7 @@ function GetCuriculum(value){
 cur.send();
 }
 function AddKolegij(value){
-  console.log(value);
-  $('#myTable').append('<tr><td>'+value.kolegij+'</td><td>'+value.ects+'</td><td>'+value.sati+'</td><td>'+value.predavanja+'</td><td>'+value.vjezbe+' </td><td>'+value.tip+'</td><td><button onclick=DeleteRow(this.parentNode.parentNode.rowIndex,kolegijArray) class="btn">Obriši</button></td></tr>');
+  $('#myTable').append('<tr><td>'+value.kolegij+'</td><td>'+value.ects+'</td><td>'+value.sati+'</td><td>'+value.predavanja+'</td><td>'+value.vjezbe+' </td><td>'+value.tip+'</td><td><button onclick=DeleteRow(this.parentNode.parentNode.rowIndex) class="btn btn-danger">Obriši</button></td></tr>');
   kolegijArray.push(value);
   Sum(kolegijArray)
 } 
@@ -49,12 +48,11 @@ function Sum(array){
 }
 var kolegijArray =[
 ];
-function DeleteRow(i,array){
+function DeleteRow(i){
   DeleteFromArray(i);
   document.getElementById('myTable').deleteRow(i)
 }
 function DeleteFromArray(index){
-  console.log(index);
   kolegijArray.splice([i-1],1);
   Sum(kolegijArray);
 }
