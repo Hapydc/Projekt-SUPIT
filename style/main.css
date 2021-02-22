@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+} 
+
+
 .body{
     background-color: silver;
 } 
@@ -8,7 +13,14 @@
     overflow: hidden;
     z-index: -100;
 }
+@keyframes heading-images {
+  from {height: 100px;}
+  to {height: 400px ;}
+ 
+}
 .heading-images{
+  animation-duration: 2s;
+  animation-name: heading-images;
     width: 100%;
     height: 400px;
     object-fit: cover;
@@ -61,10 +73,16 @@
     margin-right: 5px;
     
 }
+@keyframes campus-jpg {
+ from {height: 100px;}
+ to {height: 300px ;}
+}
 
 #campus_jpg{
     width:100%;
-   height:300px;
+    height: 300px;
+  animation-name: campus-jpg;
+  animation-duration: 2s;
    object-fit:cover;
 
     left: 0;
@@ -211,7 +229,17 @@ background-size: 100% ;
   width: 100%;
   height: 300px;
 }
+@keyframes cropped-1 {
+  from {height: 100px;}
+  to {height: 300px ;}
+  from {width: 100px;}
+  to {width: 300px ;}
+ }
+
+
 .cropped-1{
+  animation-name: cropped-1;
+  animation-duration: 2s;
     position: absolute;
     top:50%;
     left: 10%;
@@ -222,8 +250,16 @@ background-size: 100% ;
     width: 300px;
     height: 300px;
     background-size: cover;
-}  
+}
+@keyframes cropped-2 {
+  from {height: 100px;}
+  to {height: 300px ;}
+  from {width: 100px;}
+  to {width: 300px ;}
+ }  
 .cropped-2{
+  animation-name: cropped-2;
+  animation-duration: 2s;
     position: absolute;
     top:50%;
     left: 40%;
@@ -234,7 +270,16 @@ background-size: 100% ;
     width: 300px;
     height: 300px;
     background-size: cover;
+  }  
+    @keyframes cropped-3 {
+      from {height: 100px;}
+      to {height: 300px ;}
+      from {width: 100px;}
+      to {width: 300px ;}
+       
 }.cropped-3{
+  animation-name: cropped-3;
+  animation-duration: 2s;
     top: 50%;
     position: absolute;
     left: 70%;
